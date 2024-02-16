@@ -29,11 +29,5 @@ h2. Installation:
 h2. Compatibility:
 
 * Redmine up to 5.1.x, 3.4.x, 2.x, 1.4.x
-* *tested only in Google Chrome, Mozilla Firefox and the last versions of Internet Explorer (11+)*
-* plug-ins taking advantage of clipboard_image_paste:
-** KbArticle [https://github.com/alexbevi/redmine_knowledgebase]
 
-[*] Improved/changed feature
-[-] Bug fixed (we hope)
-[!] Important info
 </pre>
