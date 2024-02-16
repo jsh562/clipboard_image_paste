@@ -11,7 +11,7 @@
 # Terms of use:
 # - GNU GENERAL PUBLIC LICENSE Version 2
 #*******************************************************************************
-
+module ClipboardImagePaste
 module AttachmentPatch
   # go through attachments and find keys starting by 100;
   # image attachments are identified by key >= 10001, the keys should be numbers
@@ -119,4 +119,5 @@ begin
   end
 rescue NameError => e
   # plug-in not installed
+end
 end
