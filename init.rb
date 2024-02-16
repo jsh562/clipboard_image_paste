@@ -13,10 +13,10 @@ require 'dispatcher' unless Rails::VERSION::MAJOR >= 3
 
 Redmine::Plugin.register :clipboard_image_paste do
   name        'Clipboard image paste'
-  author      'Richard Pecl'
+  author      'James Han'
   description 'Paste cropped image from clipboard as attachment'
-  url         'http://www.redmine.org/plugins/clipboard_image_paste'
-  version     '1.13'
+  url         ''
+  version     '1'
   requires_redmine :version_or_higher => '1.4.0'
 
   configfile = File.join(File.dirname(__FILE__), 'config', 'settings.yml')
@@ -28,7 +28,13 @@ Redmine::Plugin.register :clipboard_image_paste do
 end
 
 
-if Rails::VERSION::MAJOR >= 3
+if Rails::VERSION::MAJOR >= 5
+  ActiveSupport::Reloader.to_prepare do
+    require_dependency 'attachments_controller'
+	require_dependency 'clipboard_image_paste/hooks'
+    AttachmentsController.send(:include, ClipboardImagePaste::AttachmentsPatch)
+  end
+elsif Rails::VERSION::MAJOR >= 3
   Rails.configuration.to_prepare do
     require_dependency 'clipboard_image_paste/hooks'
     require_dependency 'clipboard_image_paste/attachment_patch'
