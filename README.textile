@@ -1,4 +1,5 @@
 Forked version for Redmine version 5.x compatibility
+2024-FEB Tested in 5.1, works.
 
 h1. Redmine clipboard_image_paste plugin
 
