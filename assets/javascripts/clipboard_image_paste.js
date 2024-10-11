@@ -88,7 +88,6 @@
       minWidth: 400,
       height: 500,
       minHeight: 500,
-      dialogClass: "cbp_drop_shadow",
       create: function(event, ui) {
         dialog = this;
       },
