@@ -79,6 +79,30 @@
         resizePanel();
       }
     });
+    $("#cbp_paste_dlg2").dialog({
+      buttons: dlg_buttons,
+      closeOnEscape: true,
+      modal: true,
+      resizable: false,
+      width: 400,
+      minWidth: 400,
+      height: 500,
+      minHeight: 500,
+      dialogClass: "cbp_drop_shadow",
+      create: function(event, ui) {
+        dialog = this;
+      },
+      open: function(event, ui) {
+        initDialog();
+      },
+      close: function(event, ui) {
+        deinitDialog();
+        delete dialog;
+      },
+      resize: function(event, ui) {
+        resizePanel();
+      }
+    });
   };
 
   //----------------------------------------------------------------------------
