@@ -54,6 +54,18 @@
     var dlg_buttons = {};
     dlg_buttons[cbImagePaste.cbp_txt_btn_ok]     = insertAttachment;
     dlg_buttons[cbImagePaste.cbp_txt_btn_cancel] = function() { $(this).dialog("close"); };
+    //dlg_buttons[cbImagePaste.cbp_txt_btn_ok2]     = insertAttachment;
+    //dlg_buttons[cbImagePaste.cbp_txt_btn_cancel2] = function() { $(this).dialog("close"); };
+    dlg_buttons[cbImagePaste.cbp_txt_btn_ok2]     = {
+    class: 'cbp_button_ok2',
+    text: 'OK',
+    click: insertAttachment
+    };
+    /*dlg_buttons[cbImagePaste.cbp_txt_btn_cancel2] = {
+      class: 'cbp_button_cancel2',
+      text: 'Cancel',
+      click: function() { $(this).dialog("close"); }
+    };*/
 
     $("#cbp_paste_dlg").dialog({
       buttons: dlg_buttons,

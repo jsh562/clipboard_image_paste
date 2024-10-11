@@ -33,6 +33,8 @@
       cbImagePaste.cbp_txt_wrong_browser   = "<%= escape_javascript(l(:cbp_txt_wrong_browser,   :min_firefox_ver => $clipboard_image_paste_config['min_firefox_ver'], :min_chrome_ver => $clipboard_image_paste_config['min_chrome_ver_hf'], :min_ie_ver => $clipboard_image_paste_config['min_ie_ver'])).html_safe %>";
       cbImagePaste.cbp_txt_btn_ok          = "<%= escape_javascript(l(:cbp_txt_btn_ok           )).html_safe %>";
       cbImagePaste.cbp_txt_btn_cancel      = "<%= escape_javascript(l(:cbp_txt_btn_cancel       )).html_safe %>";
+      cbImagePaste.cbp_txt_btn_ok2          = "<%= escape_javascript(l(:cbp_txt_btn_ok2           )).html_safe %>";
+      cbImagePaste.cbp_txt_btn_cancel2      = "<%= escape_javascript(l(:cbp_txt_btn_cancel2       )).html_safe %>";
       cbImagePaste.cbp_txt_too_big_image   = "<%= escape_javascript(l(:error_attachment_too_big, :max_size => number_to_human_size(Setting.attachment_max_size.to_i.kilobytes))).html_safe %>";
       cbImagePaste.cbp_max_attach_size     = <%= Setting.attachment_max_size.to_i.kilobytes %>;
       cbImagePaste.cbp_max_attachments     = <%= $clipboard_image_paste_config['max_attachments'] %>;

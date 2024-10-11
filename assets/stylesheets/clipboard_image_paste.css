@@ -79,3 +79,14 @@
 .cbp_dlg_small {
   font-size: 10pt;
 }
+
+.cbp_button_ok2 {
+  position:absolute;
+  top:-2px;
+  right:29px;
+}
+.cbp_button_cancel2 {
+  position:absolute;
+  top:1px;
+  right:10px;
+}

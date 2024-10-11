@@ -27,7 +27,6 @@ Redmine::Plugin.register :clipboard_image_paste do
   $clipboard_image_paste_remove_alpha = redmineVer[0] < 2 || (redmineVer[0] == 2 && redmineVer[1] <= 5)
 end
 
-
 if Rails::VERSION::MAJOR >= 5
   ActiveSupport::Reloader.to_prepare do
     require_dependency 'attachments_controller'
